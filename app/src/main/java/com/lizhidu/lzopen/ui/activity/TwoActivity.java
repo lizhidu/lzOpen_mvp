@@ -1,4 +1,4 @@
-package com.lizhidu.lzopen.activity;
+package com.lizhidu.lzopen.ui.activity;
 
 import android.os.Bundle;
 import android.view.View;

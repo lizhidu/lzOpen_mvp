@@ -1,4 +1,4 @@
-package com.lizhidu.lzopen.activity;
+package com.lizhidu.lzopen.ui.activity;
 
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
@@ -6,7 +6,6 @@ import android.support.v7.widget.RecyclerView;
 import com.lizhidu.lzopen.R;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
 
 /**
  * Created by dulzh on 3/18/16.

@@ -1,4 +1,4 @@
-package com.lizhidu.lzopen.bean;
+package com.lizhidu.lzopen.model.entity;
 
 import java.util.List;
 

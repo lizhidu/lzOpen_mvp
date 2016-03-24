@@ -1,10 +1,8 @@
-package com.lizhidu.lzopen.activity;
+package com.lizhidu.lzopen.ui.activity;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
 import butterknife.ButterKnife;
 

@@ -1,8 +1,7 @@
-package com.lizhidu.lzopen.activity;
+package com.lizhidu.lzopen.ui.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.text.AndroidCharacter;
 import android.widget.TextView;
 
 import com.lizhidu.lzopen.R;
@@ -11,8 +10,6 @@ import butterknife.Bind;
 import rx.Observable;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
-import rx.observers.Observers;
-import rx.observers.Subscribers;
 
 /**
  * Created by dulzh on 3/18/16.

@@ -1,8 +1,7 @@
-package com.lizhidu.lzopen.activity;
+package com.lizhidu.lzopen.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -18,17 +17,9 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
-import java.util.ArrayList;
-
 import butterknife.Bind;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import rx.Observable;
-import rx.Observer;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
-import rx.functions.Action1;
 import rx.schedulers.Schedulers;
 
 public class MainActivity extends BaseActivity {
@@ -69,6 +60,16 @@ public class MainActivity extends BaseActivity {
     public void gotoNetworkModule(View view) {
         startActivity(new Intent(this, NetworkActivity.class));
     }
+
+    // 跳转线程安全的页面
+    public void gotoSafeModule(View view) {
+        startActivity(new Intent(this, ThreadSafeActivity.class));
+    }
+
+    // 跳转RxBinding的页面
+    public void gotoBindingModule(View view) {
+        startActivity(new Intent(this, BindingActivity.class));
+    }
 /*
 
 
@@ -79,15 +80,9 @@ public class MainActivity extends BaseActivity {
 
 
 
-    // 跳转线程安全的页面
-    public void gotoSafeModule(View view) {
-        startActivity(new Intent(this, SafeActivity.class));
-    }
 
-    // 跳转RxBinding的页面
-    public void gotoBindingModule(View view) {
-        startActivity(new Intent(this, BindingActivity.class));
-    }
+
+
     */
 
     @Override
